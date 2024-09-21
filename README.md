@@ -45,6 +45,8 @@ docker run --rm --network=host -v .:/app -v /home/your-user/path-to-photoprism/p
 
 You shall see logs along the way to know how much is left but it can take several hours depending on how powerful is your server and how many assets you've got. On top of that, once all the uploads are done, Immich will most likely run for a while to process it all. You'll be able to see all the pending tasks here `/admin/jobs-status`.
 
+While the upload and the processing on Immich side is still ongoing, if you see a bunch of broken pictures in Immich don't panic. Let the script run. I believe it's just while Immich creates the thumbnails but eventually they'll display as expected, just be patient.
+
 # Cleanup
 
 Remove the API keys created in both systems once the migration is done.
